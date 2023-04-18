@@ -1,9 +1,6 @@
 server:
   port: 7001
 eureka:
-  server:
-    enable-self-preservation: false  #关闭eureka自我保护
-    eviction-interval-timer-in-ms: 2000 #发送心跳间隔时间
   instance:
     hostname: eureka7001.com #eureka服务端的实例名称
   client:
