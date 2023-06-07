@@ -6,3 +6,12 @@ eureka:
     fetch-registry: true
     service-url:
       defaultZone: http://eureka7001.com:7001/eureka,http://eureka7002.com:7002eureka
+#设置Feign客户端超时时间
+ribbon:
+#  建立链接所用的时间，网络正常情况下，两端连接所用时间
+  ReadTimeout: 5000
+#  建立链接后，从服务端获取数据的时间
+  ConnectTimeout: 5000
+logging:
+  level:
+    com.fc.cloud.service.PaymentFeignService: debug
